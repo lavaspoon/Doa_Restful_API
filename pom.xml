@@ -42,7 +42,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+    <!--추가-->
     <build>
         <plugins>
             <plugin>
