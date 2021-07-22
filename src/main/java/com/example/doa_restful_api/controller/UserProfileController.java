@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+//user API
 @RestController
 public class UserProfileController {
     private Map<String, UserProfile> userMap;
