@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-//user API
+
 @RestController
 public class UserProfileController {
     private Map<String, UserProfile> userMap;
@@ -25,7 +25,7 @@ public class UserProfileController {
     public UserProfile getUserProfile(@PathVariable("id") String id) {
         return userMap.get(id);
     }
-
+    //전체출력
     @GetMapping("/user/all")
     public List<UserProfile> getUserProfileList() {
         return new ArrayList<UserProfile>(userMap.values());
