@@ -30,7 +30,7 @@ public class UserProfileController {
     public List<UserProfile> getUserProfileList() {
         return new ArrayList<UserProfile>(userMap.values());
     }
-    //값 insert  
+    //값 insert
     @PutMapping("/user/{id}")
     public void putUserProfile(@PathVariable("id") String id, @RequestParam("name") String name, @RequestParam("phone") String phone, @RequestParam("address") String address) {
         UserProfile userProfile = new UserProfile(id, name, phone, address);
